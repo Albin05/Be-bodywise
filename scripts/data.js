@@ -4,7 +4,7 @@
 
 let hair_products = [];
 
-function hair (rating, url, heading, price, strikedprice, use, ingredients){
+function hair(rating, url, heading, price, strikedprice, use, ingredients){
     this.rating = rating
     this.url = url
     this.heading = heading
@@ -41,12 +41,12 @@ let p22 = new hair(4.5, "https://res.cloudinary.com/mosaic-wellness/image/upload
 let p23 = new hair(4.5, "https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1641480325/staging/products/buying-options/instant%20dandruff%20relief%20kit/carousel/IDRK_1000x750_N.jpg","Instant Dandruff Relief Kit", 649, 799,"Dandruff Control, Frizz control", "1% Keto Shampoo, Silk Protein Conditioner");
 
 
-localStorage.setItem("hair_products", JSON.stringify(hair_products))
+localStorage.setItem("hair_products", JSON.stringify(hair_products));
 
 // Skin Products
 let skin_products = [];
 
-function skin (rating, url, heading, price, strikedprice, use, ingredients){
+function skin(rating, url, heading, price, strikedprice, use, ingredients){
     this.rating = rating
     this.url = url
     this.heading = heading
@@ -69,10 +69,105 @@ let s8 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f
 let s9 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1643013958/staging/products/acne-control-wash/New%20blue%20images/0_BRUSH/PRODUCT%20IMAGES/SAFW_1000x750.jpg","1% Salicylic Acid Foaming Face Wash", 349, null, "Acne prone skin", "1% Salicylic acid, 1% Glycolic acid");
 let s10 = new skin(4,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1610589752/staging/products/oil-control-moisturiser/Oil-Control-Moisturiser-Tube-with-monocarton_1600X1200.jpg","Oil Control Moisturizer", 297, 349, "Acne-prone skin", "Ceramides, Phytosqualene, Hyalutonic adid, Argine");
 let s11 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1639571842/staging/products/collagen-powder/PRODUCT%20IMAGES/CP_1000x750.jpg","Collagen Powder", 999, null, "Fine Lines, Hydration", "Glycine & Proline, Omega 3, Multivitamins");
-let s12 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1636697869/staging/products/2-salicylic-acid-serum/PRODUCT%20IMAGES/2SAFS_1000x750.jpg","2% Salicylic Acid Face Serum", 549, null, "Acne, Blackheads, Whiteheads", "2% Salicylic Adid, 2% Femented Rice Water, 0.5% Niacinamide");
-let s13 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1641555836/staging/products/2-salicylic-acid-face-wash/PRODUCT%20IMAGES/2SAFW_1000x750.png","2% Salicylic Acid Face Wash", 549, null, "Acne, Blackheads, Whiteheads", "2% Salicylic Adid, 2% Femented Rice Water, 0.5% Niacinamide");
+let s12 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1636697869/staging/products/2-salicylic-acid-serum/PRODUCT%20IMAGES/2SAFS_1000x750.jpg","2% Salicylic Acid Face Serum", 549, null, "Acne, Blackheads, Whiteheads", "2% Salicylic Acid, 2% Femented Rice Water, 0.5% Niacinamide");
+let s13 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1641555836/staging/products/2-salicylic-acid-face-wash/PRODUCT%20IMAGES/2SAFW_1000x750.png","2% Salicylic Acid Face Wash", 299, null, "Acne-Prone skin", "2% Salicylic acid, Allantonin");
+let s14 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1622686002/staging/products/Pore%20Tightening%20Toner/Carousel/1600x1200.jpg","Pore Tightening Toner", 499, null, "Large open pores", "5% Lactic Acid, Arginine, Witch Hazel, Aloe Vera");
+let s15 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1611886096/staging/products/Skin%20Hydrating%20Cleanser/Carousel/1600x1200.jpg","Hyaluronic Acid Face Wash", 315, 349, "Dry, sensitive skin", "Pentavitin, Shea Butter, Hyaluronic Acid, Allantoin");
+let s16 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1639978172/staging/products/Retinol%20Under%20Eye%20Cream/PRODUCT%20IMAGES/2RUEC_1000X750.jpg","2% Bio Retinol Under Eye", 499, null, "Dark Circles, Fine Lines & Wrinkles", "2% Bio Retinol, 1% Niacinamide, 2% kakadu Plum");
+let s17 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1637737681/staging/products/skin-regenerate-night/0_BLUE/PRODUCT%20IMAGES/1000x750.jpg","1% Retinol Liposome Night Cream", 599, null, "Fine lines & wrinkles", "1% Retinol, 3% Niacinamide");
+let s18 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1639097000/staging/products/Sunscreen/0_BLUE/PRODUCT%20IMAGES/BSS_1000x750.png","Broad Spectrum SPF 30 Sunscreen", 399, null, "Sun & blue light protection", "Avobenzone, Titanium Dioxide");
+let s19 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1643027363/staging/products/buying-options/clear%20skin%20edition/0_BLUE/PRODUCT%20IMAGES/TCSE_1000x750_N.jpg","The Clear Skin Edition", 1379, 1849, "Active acne, Acne scars", "10% Niacinamide Serum, AHA-BHA Facewash, AHA-BHA Gel, Broad Spectrum SPF 30");
+let s20 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1643259335/staging/products/buying-options/Acne%20scar%20control%20starter%20pack/0_BLUE/PRODUCT%20IMAGES/AMRK_1000x750_N.jpg","Acne Marks Reduction Kit", 799, 949, "Acne scars", "AHA-BHA Facewash, 10% Niacinamide Serum");
+let s21 = new skin(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1634181333/staging/products/buying-options/Active%20Acne%20and%20Scar%20Removal%20Pack/0_BLUE/Acne%20Treatment%20Kit_1000X750.png","Acne Treatment Kit", 899, 1099, "Active acne, Acne scars", "10% Niacinamide Serum, AHA-BHA Gel");
+let s22 = new skin(4,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1639457747/staging/products/buying-options/Skin%20Glow%20Starter%20Pack/0_BLUE/PRODUCT%20IMAGES/SGSP_1000x750.jpg","Skin Glow Starter Pack", 1099, 1299, "Bright & Glowing skin", "20% Vitamin C Serum, Skin Health Gummies");
+let s23 = new skin(4,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1639450858/staging/products/buying-options/Anti-aging%20starter%20pack/0_BLUE/PRODUCT%20IMAGES/SIK_1000x750.jpg","Skin Illuminating Kit", 1149, 1299, "Dullness, Fine lines & wrinkles", "20% Vitamin C Serum, 1% Retinol Liposome Night Cream");
+let s24 = new skin(4,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1620097921/staging/products/buying-options/Oil%20Control%20Starter%20Pack/New%20Carousel/Oil_Control_Starter_Pack.jpg","Oil Control Starter Pack", 599, 699, "Oil Control", "1% AHA-BHA Facewash, Ceramide Moisturiser");
 
 
-console.log(skin_products);
+localStorage.setItem("skin_products", JSON.stringify(skin_products));
 
-localStorage.setItem("skin_products", JSON.stringify(skin_products))
+
+//Weight Products
+
+let weight_products = [];
+
+function weight(rating, url, heading, price, strikedprice, use, ingredients){
+    this.rating = rating
+    this.url = url
+    this.heading = heading
+    this.price = price
+    this.strikedprice = strikedprice
+    this.use = use
+    this.ingredients = ingredients
+
+    weight_products.push(this)
+}
+
+let w1 = new weight(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1640076363/staging/products/active-assist-acv-gummies/0_ACV/CAROUSEL/0.jpg","Apple Cider Vinegar Gummies (30)", 599, null, "Gut health improvement", "Apple Cider Vinegar, Inulin");
+let w2 = new weight(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1637312363/staging/products/active-assist-acv-gummies/Cylindrical%20Pack%20%2860%29/1N-1000x750.png","Apple Cider Vinegar Gummies (60)", 999, 1199, "Gut health improvement", "Apple Cider Vinegar, Inulin");
+let w3 = new weight(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1637905761/staging/products/apple-cider-vinegar-effervescent-tablets/PRODUCT%20IMAGES/1000x750_ACVET.jpg","ACV Effervescent Tablets (15)", 399, null, "Weight Loss, Gut Health", "Apple Cider Vinegar, Vitamin B6 and B12");
+let w4 = new weight(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1638857876/staging/products/apple-cider-vinegar-effervescent-tablets/PACK%20OF%202/acv-pack-of-2.png","ACV Effervescent Tablets (30)", 599, 798, "Weight Loss, Gut Health", "Apple Cider Vinegar, Vitamin B6 and B12");
+let w5 = new weight(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1626765615/staging/products/Protein/1600x1200.jpg","Vegan Plant Protein Powder + Shaker", 1599, 1998, "Muscle toning, Bone Density Improvement", "4-Plant Based Proteins, 28 Vitamins and Minerals, 9 Amino Acids");
+let w6 = new weight(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1636541751/staging/products/Protein/1_1000x750.png","Vegan Plant Protein Powder", 1499, 1599, "Muscle toning, Bone Density Improvement", "4-Plant Based Proteins, 28 Vitamins and Minerals, 9 Amino Acids");
+let w7 = new weight(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1644488397/staging/products/active-assist-weight-tea/30%20Pack/PRODUCT%20IMAGES/AAT30_1000x750.jpg","Active Assist Tea", 499, null, "Curbing appetite", "Green Tea, Garcinia, Turmeric, Ginger");
+
+
+localStorage.setItem("weight_products", JSON.stringify(weight_products));
+
+
+//PCOS Products
+
+let pcos_products = [];
+
+function pcos(rating, url, heading, price, strikedprice, use, ingredients){
+    this.rating = rating
+    this.url = url
+    this.heading = heading
+    this.price = price
+    this.strikedprice = strikedprice
+    this.use = use
+    this.ingredients = ingredients
+
+    pcos_products.push(this)
+}
+
+let c1 = new pcos(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1635160165/staging/products/pms-gummies/PRODUCT%20IMAGES/PMS%20Gummies_1000x750.png","PMS Gummies", 999, null, "Managing PMS Symptoms", "Chasteberry Extract, L-tryptophan, St. John's wort");
+let c2 = new pcos(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1629302467/staging/products/PCOS%20Balance%20Capsule/Carousel/Updated/PCOS_product_image_NEW.jpg","PCOS Balance Capsules", 599, null, "Irregular Periods", "Shatavari, Ashoka, Lodhra, Chandan");
+let c3 = new pcos(5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1623500692/staging/products/PCOS%20Superfood/New%20Carousel/superdood_1000x750.jpg","PCOS Superfood: Insoitol Supplement", 539, 599, "Managing PCOS Symptoms", "Myo-Inositol, D-chiro-inositol, Multivitamins");
+let c4 = new pcos(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1621260455/staging/products/Period%20Pain%20Relief%20Patch/Carousel/1000x750.jpg","Period Pain Relief Patch", 355, 399, "Menstrual Cramps", "Eucalyptus, Boswellia, Evening Primose Oil, Menthol");
+let c5 = new pcos(5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1637158873/staging/products/PCOS%20Superfood/Pack%20of%202/1000x750-Pack_of_2.png","PCOS Superfood - 15 Sachet - Pack of 2", 999, 1199, "Managing PCOS Symptoms", "Myo-Inositol, D-chiro-inositol, Multivitamins");
+let c6 = new pcos(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1631868631/staging/products/buying-options/pcos%20support%20kit/Period-pain-relief-patch-_-PCOS-capsules_1000X750.jpg","PCOS Support Kit", 799, 999, "Menstrual Cramps, Irregular Periods", "Period Pain Relief Patches, Shatavari PCOS Balance Capsules");
+let c7 = new pcos(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1631868664/staging/products/buying-options/pcos%20control%20kit/Period-pain-relief-patch-_-PCOS-capsules_1600X1200.jpg","PCOS Control Kit", 899, 999, "Menstrual Cramps, Managing PCOS Syptoms", "Period Pain Relief Patches, PCOS Superfood");
+let c8 = new pcos(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1631868728/staging/products/buying-options/pcos%20360%C2%B0%20kit/PCOS-Capsules-_-PCOS-Superfood_1000X750.jpg","PCOS 360° Kit", 999, 1198, "Irregular Periods, Managing PCOS Symptoms", "Shatavari PCOS Balance Capsules, PCOS Superfood");
+
+
+localStorage.setItem("pcos_products", JSON.stringify(pcos_products));
+
+
+//Feminine Products
+
+let feminine_products = [];
+
+function feminine(rating, url, heading, price, strikedprice, use, ingredients){
+    this.rating = rating
+    this.url = url
+    this.heading = heading
+    this.price = price
+    this.strikedprice = strikedprice
+    this.use = use
+    this.ingredients = ingredients
+
+    feminine_products.push(this)
+}
+
+let f1 = new feminine(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1624343637/staging/products/Intimate%20Wash/New%20Carousel/1600x1200.jpg","pH Balancing Intimate Wash", 349, null, "Maintaining ph balance & hygiene", "1% Niacinamide, Lactic Acid, Tea Tree");
+let f2 = new feminine(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1614334593/staging/products/UTI%20shield%20capsule/Carousel/vitamic_C_serum_product_image.jpg","pH Balancing Intimate Wash", 599, null, "UTI Prevention", "D - Mannose, Cranberry Extract, Hibiscus Extract, Pobiotics");
+let f3 = new feminine(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1617507488/staging/products/UTI%20Detection%20Strips/Carousel/1600x1200.jpg","pH Balancing Intimate Wash", 399, null, "UTI Detection", "Detection Reagents for Leukocyte & Nitrite");
+let f4 = new feminine(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1619692195/staging/products/Intimate%20Care%20Serum/Carousel/1000x750.jpg","Intimate Care Serum", 399, 499, "Maintaining intimate hygiene", "3% Manjakani Extract, 2% Niacinamide, Kojic Acid");
+let f5 = new feminine(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1622127981/staging/products/Chafing%20Guard%20Gel/Carousel/2.png","Anti Rash and Chafing Gel", 399, null, "Intimate area rashes & chafing", "Olive oil, Jojoba oil, Vitamin E");
+let f6 = new feminine(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1622127929/staging/products/Intimate%20Powder/Carousel/1.png","Clotrimazole Intimate Powder", 249, 349, "Intimate area sweat, infections", "1% Clotrimazole, Zinc Oxide, Peppermint");
+let f7 = new feminine(4.5,"https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1641384277/staging/products/buying-options/complete%20hygiene%20combo/PRODUCT%20IMAGES/CHC_1000x750.jpg","Complete Hygiene Combo", 599, 748, "Intimate area sweat, rashes & chafing", "Clotrimazole Intimate Powder, Anti Rash and Chafing Gel");
+
+
+
+localStorage.setItem("femine_products", JSON.stringify(feminine_products));
