@@ -1,3 +1,5 @@
+let cart_data = JSON.parse(localStorage.getItem("cart_data")) || [];
+
 function appendproducts(data, parent){
     data.forEach( (el) => {
         let div = document.createElement("div");
@@ -37,13 +39,24 @@ function appendproducts(data, parent){
         let ingredients = document.createElement("p");
         ingredients.innerText = `WITH ${el.ingredients}`;
 
+        let button = document.createElement("button");
+        button.innerText = "Add to Cart";
+        button.addEventListener("click", function(){
+            addtoCart(el);
+        })
+
         price_div.append(price, strikedprice);
 
-        div.append(image, star, heading, price_div, uses, ingredients);
+        div.append(image, star, heading, price_div, uses, ingredients, button);
 
 
         parent.append(div);
     })
+}
+
+function addtoCart(el){
+    cart_data.push(el);
+    localStorage.setItem("cart_data", JSON.stringify(cart_data));
 }
 
 export default appendproducts;
