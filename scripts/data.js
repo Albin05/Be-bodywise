@@ -40,6 +40,7 @@ let p21 = new hair(4, "https://res.cloudinary.com/mosaic-wellness/image/upload/f
 let p22 = new hair(4.5, "https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1641478408/staging/products/buying-options/dandruff%20starter%20kit/carousel/DSK_1000x750.png","Dandruff Starter Kit", 699, 799,"Dandruff Control & Hair Strength", "1% Keto Shampoo, 5000 MCG Biotin Gummies");
 let p23 = new hair(4.5, "https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1641480325/staging/products/buying-options/instant%20dandruff%20relief%20kit/carousel/IDRK_1000x750_N.jpg","Instant Dandruff Relief Kit", 649, 799,"Dandruff Control, Frizz control", "1% Keto Shampoo, Silk Protein Conditioner");
 
+console.log(hair_products);
 
 localStorage.setItem("hair_products", JSON.stringify(hair_products));
 
