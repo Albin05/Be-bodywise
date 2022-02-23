@@ -1,8 +1,12 @@
 function navbar(){
     return `    <div id="nav_body">
+
     <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt="beBodywise"></Button>
 </div>
 <div id="nav_mid">
+
+    <a href=""> <sup id="nav_be">BE</sup> Bodywise <sup id="nav_tm">TM</sup></a>
+</div>
 <div id="nav_txt">
     <a href="">Book Doctor Consultation</a>
 </div>
@@ -21,12 +25,16 @@ function navbar(){
 </div>
 <div id="nav_txt">
     <a href="">All Products</a>
+    <a href="products.html">All Products</a>
+
 </div>
 <div id="nav_txt">
     <a href="">Refer & Earn</a>
 </div>
+
 </div>
 <div id="nav_right">
+
 <div id="nav_search">
     <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_search.svg" alt=""></button>
 </div>
@@ -39,6 +47,7 @@ function navbar(){
 <div id="nav_btn">
     <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603950724/staging/Home/Images/u_shopping-bag.svg" alt=""></button>
 </div>
+
 </div>`;
 }
 
