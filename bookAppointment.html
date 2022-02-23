@@ -50,43 +50,55 @@
                                         </div>
                                         <div>
                                             <div class="steps_optionsb">
-                                                <div class="step_optionb">
-                                                    <input type="checkbox" name="option" class="checkOptb">
+                                                <div class="step_optionhairb">
+                                                    <div class="opthbox">
+                                                        <input type="checkbox" name="option" class="checkOpthb">
+                                                    </div>
                                                     <div style="margin-left:10px;">
                                                         <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1643022205/Icons%20BW%20DA%20flow/hair.png" style="vertical-align:middle; width: 33px; height: 33px;" alt="">
                                                     </div>
                                                     <div class="titleoptb">Hair</div>
                                                 </div>
-                                                <div class="step_optionb">
-                                                    <input type="checkbox" name="option" class="checkOptb">
+                                                <div class="step_optionskinb">
+                                                    <div class="optsbox">
+                                                        <input type="checkbox" name="option" class="checkOptsb">
+                                                    </div>
                                                     <div style="margin-left:10px;">
                                                         <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1643022205/Icons%20BW%20DA%20flow/skin.png" style="vertical-align:middle; width: 31px; height: 30px;" alt="">
                                                     </div>
                                                     <div class="titleoptb">Skin</div>
                                                 </div>
-                                                <div class="step_optionb">
-                                                    <input type="checkbox" name="option" class="checkOptb">
+                                                <div class="step_optionpcosb">
+                                                    <div class="optpbox">
+                                                        <input type="checkbox" name="option" class="checkOptpb">
+                                                    </div>
                                                     <div style="margin-left:10px;">
                                                         <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1643022205/Icons%20BW%20DA%20flow/PCOS.png" style="vertical-align:middle; width: 36px; height: 32px;" alt="">
                                                     </div>
                                                     <div class="titleoptb">PCOS</div>
                                                 </div>
-                                                <div class="step_optionb">
-                                                    <input type="checkbox" name="option" class="checkOptb">
+                                                <div class="step_optionweightb">
+                                                    <div class="optwbox">
+                                                        <input type="checkbox" name="option" class="checkOptwb">
+                                                    </div>
                                                     <div style="margin-left:10px;">
                                                         <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1643022206/Icons%20BW%20DA%20flow/weight.png" style="vertical-align:middle; width: 29px; height: 29px; " alt="">
                                                     </div>
                                                     <div class="titleoptb">Weight</div>
                                                 </div>
-                                                <div class="step_optionb">
-                                                    <input type="checkbox" name="option" class="checkOptb">
+                                                <div class="step_optionnutritionb">
+                                                    <div class="optnbox">
+                                                        <input type="checkbox" name="option" class="checkOptnb">
+                                                    </div>
                                                     <div style="margin-left:10px;">
                                                         <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1643022206/Icons%20BW%20DA%20flow/weight.png" style="vertical-align:middle; width: 29px; height: 29px; " alt="">
                                                     </div>
                                                     <div class="titleoptb">Nutrition</div>
                                                 </div>
-                                                <div class="step_optionb">
-                                                    <input type="checkbox" name="option" class="checkOptb">
+                                                <div class="step_optionutib">
+                                                    <div class="optubox">
+                                                        <input type="checkbox" name="option" class="checkOptub">
+                                                    </div>
                                                     <div style="margin-left:10px;">
                                                         <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1643022206/Icons%20BW%20DA%20flow/UTI.png" style="vertical-align:middle; width: 31px; height: 30px; " alt="">
                                                     </div>
@@ -96,7 +108,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <button class="next_buttonb" disabled id="nxtbuttondb">Next</button>
+                                        <button class="next_buttonb">Next</button>
                                     </div>
                                 </div>
                                 <div class="card_containerb">
@@ -125,15 +137,158 @@
             imgOffer.style.width="43px";  
             }
     }
-    let Optionsdiv=document.getElementsByClassName("step_optionb");
+    let Hairdiv=document.querySelector(".step_optionhairb");
+    let Skindiv=document.querySelector(".step_optionskinb");
+    let Pcosdiv=document.querySelector(".step_optionpcosb");
+    let Weightdiv=document.querySelector(".step_optionweightb");
+    let Nutritiondiv=document.querySelector(".step_optionnutritionb");
+    let UTIdiv=document.querySelector(".step_optionutib");
     let Headtitle=document.querySelector(".headerquesb");
     let step1=document.querySelector(".step_1ub");
     let nxtButton=document.querySelector(".next_buttonb");
-    let titleopt=document.getElementsByClassName("titleoptb");
-   
-    Optionsdiv.onclick=()=>{
-        if( titleopt.value=="Hair"){
-            Optionsdiv.style.Color="rgb(102,80,154)";
+    let num1div=document.querySelector(".step_1ub");
+    let checkHair=document.querySelector(".opthbox");
+    
+    // console.log(check);
+    var x=0;
+    Hairdiv.onclick=()=>{
+        x++;
+        if(x%2==1){
+        Hairdiv.style.backgroundColor="rgb(102,80,154)";
+        nxtButton.style.backgroundColor="rgb(102,80,154)";
+        Pcosdiv.style.border="1px solid rgb(102,80,154)";
+        Hairdiv.style.border="1px solid rgb(102,80,154)";
+        Skindiv.style.border="1px solid rgb(102,80,154)";
+        Weightdiv.style.border="1px solid rgb(102,80,154)";
+        Nutritiondiv.style.border="1px solid rgb(102,80,154)";
+        UTIdiv.style.border="1px solid rgb(102,80,154)";
+        Headtitle.style.color="rgb(102,80,154)";
+        num1div.style.backgroundColor="rgb(102,80,154)";
+        // checkHair.style.backgroundImage=url(`https://res.cloudinary.com/mosaic-wellness/image/upload/v1643091299/Icons%20BW%20DA%20flow/checks/sc1.png`);
+        console.log("hair saying hello");
+        }
+        else if(x%2==0){
+            console.log("oh ! hair saying bye");
+            Hairdiv.style.backgroundColor="white";
+            nxtButton.style.opacity=".2";
         }
     }
+
+    Skindiv.onclick=()=>{
+        x++;
+        if(x%2==1){
+        Skindiv.style.backgroundColor="rgb(25,100,171)";
+        nxtButton.style.backgroundColor="rgb(25,100,171)";
+        Pcosdiv.style.border="1px solid rgb(25,100,171)";
+        Hairdiv.style.border="1px solid rgb(25,100,171)";
+        Skindiv.style.border="1px solid rgb(25,100,171)";
+        Weightdiv.style.border="1px solid rgb(25,100,171)";
+        Nutritiondiv.style.border="1px solid rgb(25,100,171)";
+        UTIdiv.style.border="1px solid rgb(25,100,171)";
+        Headtitle.style.color="rgb(25,100,171)";
+        num1div.style.backgroundColor="rgb(25,100,171)";
+        // checkHair.style.backgroundImage=url(`https://res.cloudinary.com/mosaic-wellness/image/upload/v1643091299/Icons%20BW%20DA%20flow/checks/sc1.png`);
+        console.log("skin saying hello");
+        }
+        else if(x%2==0){
+            console.log("oh ! skin saying bye");
+            Skindiv.style.backgroundColor="white";
+            nxtButton.style.opacity=".2";
+        }
+
+    }
+    
+    Pcosdiv.onclick=()=>{
+        x++;
+        if(x%2==1){
+        Pcosdiv.style.backgroundColor="rgb(232,102,105)";
+        Pcosdiv.style.border="1px solid rgb(232,102,105)";
+        Hairdiv.style.border="1px solid rgb(232,102,105)";
+        Skindiv.style.border="1px solid rgb(232,102,105)";
+        Weightdiv.style.border="1px solid rgb(232,102,105)";
+        Nutritiondiv.style.border="1px solid rgb(232,102,105)";
+        UTIdiv.style.border="1px solid rgb(232,102,105)";
+        nxtButton.style.backgroundColor="rgb(232,102,105)";
+        Headtitle.style.color="rgb(232,102,105)";
+        num1div.style.backgroundColor="rgb(232,102,105)";
+        // checkHair.style.backgroundImage=url(`https://res.cloudinary.com/mosaic-wellness/image/upload/v1643091299/Icons%20BW%20DA%20flow/checks/sc1.png`);
+        console.log("pcos saying hello");
+        }
+        else if(x%2==0){
+            console.log("oh ! pcos saying bye");
+            Pcosdiv.style.backgroundColor="white";
+            nxtButton.style.opacity=".2";
+        }
+
+    }
+    Weightdiv.onclick=()=>{
+        x++;
+        if(x%2==1){
+        Weightdiv.style.backgroundColor="rgb(0,112,97)";
+        Pcosdiv.style.border="1px solid rgb(0,112,97)";
+        Hairdiv.style.border="1px solid rgb(0,112,97)";
+        Skindiv.style.border="1px solid rgb(0,112,97)";
+        Weightdiv.style.border="1px solid rgb(0,112,97)";
+        Nutritiondiv.style.border="1px solid rgb(0,112,97)";
+        UTIdiv.style.border="1px solid rgb(0,112,97)";
+        nxtButton.style.backgroundColor="rgb(0,112,97)";
+        Headtitle.style.color="rgb(0,112,97)";
+        num1div.style.backgroundColor="rgb(0,112,97)";
+        // checkHair.style.backgroundImage=url(`https://res.cloudinary.com/mosaic-wellness/image/upload/v1643091299/Icons%20BW%20DA%20flow/checks/sc1.png`);
+        console.log("weight saying hello");
+        }
+        else if(x%2==0){
+            console.log("oh ! weight saying bye");
+            Weightdiv.style.backgroundColor="white";
+            nxtButton.style.opacity=".2";
+        }
+
+    }
+    Nutritiondiv.onclick=()=>{
+        x++;
+        if(x%2==1){
+        Nutritiondiv.style.backgroundColor="rgb(0,112,97)";
+        Pcosdiv.style.border="1px solid rgb(0,112,97)";
+        Hairdiv.style.border="1px solid rgb(0,112,97)";
+        Skindiv.style.border="1px solid rgb(0,112,97)";
+        Weightdiv.style.border="1px solid rgb(0,112,97)";
+        Nutritiondiv.style.border="1px solid rgb(0,112,97)";
+        UTIdiv.style.border="1px solid rgb(0,112,97)";
+        nxtButton.style.backgroundColor="rgb(0,112,97)";
+        Headtitle.style.color="rgb(0,112,97)";
+        num1div.style.backgroundColor="rgb(0,112,97)";
+        // checkHair.style.backgroundImage=url(`https://res.cloudinary.com/mosaic-wellness/image/upload/v1643091299/Icons%20BW%20DA%20flow/checks/sc1.png`);
+        console.log("weight saying hello");
+        }
+        else{
+            console.log("oh ! weight saying bye");
+            Nutritiondiv.style.backgroundColor="white";
+            nxtButton.style.opacity=".2";
+        }
+
+    }
+    UTIdiv.onclick=()=>{
+        x++;
+        if(x%2==1){
+        UTIdiv.style.backgroundColor="rgb(94,147,189)";
+        Pcosdiv.style.border="1px solid rgb(94,147,189)";
+        Hairdiv.style.border="1px solid rgb(94,147,189)";
+        Skindiv.style.border="1px solid rgb(94,147,189)";
+        Weightdiv.style.border="1px solid rgb(94,147,189)";
+        Nutritiondiv.style.border="1px solid rgb(94,147,189)";
+        UTIdiv.style.border="1px solid rgb(94,147,189)";
+        nxtButton.style.backgroundColor="rgb(94,147,189)";
+        Headtitle.style.color="rgb(94,147,189)";
+        num1div.style.backgroundColor="rgb(94,147,189)";
+        console.log("weight saying hello");
+        }
+        else if(x%2==0){
+            console.log("oh ! weight saying bye");
+            UTIdiv.style.backgroundColor="white";
+            nxtButton.style.opacity=".2";
+        }
+
+    }
+    
+    
 </script>

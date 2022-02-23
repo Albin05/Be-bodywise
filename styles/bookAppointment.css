@@ -82,9 +82,9 @@ body {
   align-items: center;
   border: none;
 }
-.next_buttonb:disabled {
+/* .next_buttonb:disabled {
   opacity: 0.2;
-}
+} */
 .headerquesb {
   display: flex;
   flex-direction: column;
@@ -104,7 +104,12 @@ body {
   width: 360px;
   align-items: center;
 }
-.step_optionb {
+.step_optionhairb,
+.step_optionskinb,
+.step_optionpcosb,
+.step_optionweightb,
+.step_optionnutritionb,
+.step_optionutib {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -113,7 +118,12 @@ body {
   color: white;
   margin-bottom: 6px;
 }
-.checkOptb {
+.checkOpthb,
+.checkOptsb,
+.checkOptwb,
+.checkOptpb,
+.checkOptnb,
+.checkOptub {
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 16px;
   width: 16px;
