@@ -1,0 +1,52 @@
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    box-sizing: border-box;
+    color: white;
+}
+#upcontainer{
+    background: #353e5f;
+    padding: 30px;
+    display: block;
+}
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+}
+#login{
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#x{
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+}
+#down{
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
+}
+#down1{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 38px;
+    margin-left: 4px;
+}
