@@ -1,3 +1,22 @@
+
+#home_top {
+  display: flex;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  padding-top: 70px;
+  border: 1px solid red;
+}
+#booknow {
+  width: 555px;
+  height: 167px;
+  margin-top: 50px;
+  border-radius: 18px;
+  background-color: rgb(88, 173, 173);
+}
+#bookflex {
+  display: flex;
+
     #home_top {
   display: flex;
   width: 80%;
@@ -67,10 +86,17 @@
   color:#f6f6f6;
   margin-top:24px;
   border:none;
+
 }
 #bookimg {
   margin-left: -200px;
   margin-top: 18px;
+
+}
+#home_img {
+  display: flex;
+  margin-left: 100px;
+
   position:absolute;
   bottom:0px;
   border-radius:18px;
@@ -86,6 +112,7 @@
   display: flex;
   
  
+
 }
 #image1 {
   width: 220px;

@@ -1,6 +1,13 @@
 import appendproducts from "./scripts/app.js"
 
 
+    let data = JSON.parse(localStorage.getItem("hair_products"));
+
+    let parent = document.getElementById("prod_container");
+    
+    appendproducts(data, parent);
+
+
 // Page loading
 
 let parent = document.getElementById("prod_container");
@@ -80,4 +87,4 @@ function feminineprod(){
 
     
     
-    
+
