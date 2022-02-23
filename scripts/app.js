@@ -9,14 +9,7 @@ function appendproducts(data, parent){
         let heading = document.createElement("p");
         heading.innerText = el.heading;
 
-        let price = document.createElement("h3");
-        price.innerText = el.price;
-
-        div.append(image,heading,price);
-
-        image.setAttribute("id","product_image")
-        image.src = el.url;
-
+        
         let star = document.createElement("img");
         star.setAttribute("id", "star_image")
 
@@ -30,9 +23,6 @@ function appendproducts(data, parent){
             star.src = "https://cdn.discordapp.com/attachments/945524831842095116/945981157860859924/5starratee.png"
         }
         
-        let heading = document.createElement("p");
-        heading.innerText = el.heading;
-
         let price_div = document.createElement("div");
         price_div.style.display = "flex"
 

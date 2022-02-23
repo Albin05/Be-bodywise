@@ -120,7 +120,7 @@ body {
 #nav_search > button > img {
   width: 75%;
   height: 75%;
-
+}
 #nav_search > button {
   background-color: black;
   margin-left: 70px;
@@ -157,18 +157,6 @@ body {
   }
 }
 
-
-  margin-top: 17px;
-  margin-left: 15px;
-}
-#nav_btn > button > img {
-  width: 24px;
-  height: 24px;
-}
-#nav_btn > button > a > img {
-  width: 24px;
-  height: 24px;
-}
 
 
 /* Footer CSS */
