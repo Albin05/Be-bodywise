@@ -1,0 +1,72 @@
+#home_top {
+  display: flex;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  padding-top: 70px;
+  border: 1px solid red;
+}
+#booknow {
+  width: 555px;
+  height: 167px;
+  margin-top: 50px;
+  border-radius: 18px;
+  background-color: rgb(88, 173, 173);
+}
+#bookflex {
+  display: flex;
+}
+#bookimg {
+  margin-left: -200px;
+  margin-top: 18px;
+}
+#home_img {
+  display: flex;
+  margin-left: 100px;
+}
+#image1 {
+  width: 220px;
+  height: 388px;
+  border: 1px solid #f6f6f6;
+  border-radius: 39px;
+  margin-right: 20px;
+  background-color: #fdf5eb;
+}
+#image1 > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 39px;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+#image2 {
+  width: 200px;
+  height: 215px;
+  border: 1px solid #f6f6f6;
+  border-radius: 22px;
+  margin-right: 20px;
+  background-color: #f6f6f6;
+  margin-right: 20px;
+}
+#image2 > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+#image3 {
+  width: 200px;
+  height: 152px;
+  margin-top: 15px;
+  border: 1px solid #f6f6f6;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+}
+#image3 > img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  border-radius: 22px;
+}
