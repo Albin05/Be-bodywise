@@ -19,7 +19,7 @@ function navbar(){
     </select>
 </div>
 <div id="nav_txt">
-    <a href="">All Products</a>
+    <a href="products.html">All Products</a>
 </div>
 <div id="nav_txt">
     <a href="">Refer & Earn</a>
