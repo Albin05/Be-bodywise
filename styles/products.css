@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#prod_buttons {
+  margin: 50px;
+}
+
+#prod_container {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 20px;
+}
+#prod_container > div {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#prod_container img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#prod_container p {
+    font-family: 'Sen', sans-serif;
+    font-size: 14px;
+}
+
