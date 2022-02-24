@@ -1,4 +1,5 @@
-    #home_top {
+
+#home_top {
   display: flex;
   width: 80%;
   margin: auto;
@@ -42,18 +43,18 @@
  justify-content: space-between;
  border-radius:18px;
  color:white;
- width:500px;
+ width: 80%;
  height:160px;
  margin-top:40px;
- position:relative;
+ /* position:relative; */
 }
 #booknow .begin-cont{
   width:400px;
-  
+
 }
 #booknow .begin{
   margin:0px;
-  font-size:24px;
+  font-size:20px;
  
 }
 #booknow .book_cons{
@@ -78,7 +79,7 @@
 }
 #bookflex .doctor_img{
   border-radius:18px;
-  margin-left: -10em;
+  margin-left: -15em;
   margin-bottom: 37px;
 }
 /* second part css */
@@ -86,6 +87,7 @@
   display: flex;
   
  
+
 }
 #image1 {
   width: 220px;
@@ -99,7 +101,7 @@
   width: 100%;
   height: 100%;
   border-radius: 39px;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   object-fit: cover;
 }
 #image2 {
@@ -115,7 +117,7 @@
   width: 100%;
   height: 100%;
   border-radius: 22px;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   object-fit: cover;
 }
 #image3 {
@@ -129,7 +131,7 @@
 #image3 > img {
   width: 100%;
   height: 100%;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   object-fit: cover;
   border-radius: 22px;
 }

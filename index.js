@@ -2,8 +2,6 @@
 import {navbar, footer} from "./components/navbar.js";
 
 
-
-
 let navbar_div = document.getElementById("nav_container");
 navbar_div.innerHTML = navbar();
 
