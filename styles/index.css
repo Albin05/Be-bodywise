@@ -1,28 +1,93 @@
+
 #home_top {
   display: flex;
   width: 80%;
-  height: 400px;
   margin: auto;
   padding-top: 70px;
-  border: 1px solid red;
+
 }
+
+#main #home_top #home_upload{
+  display:flex;
+  flex-direction: column;
+  padding-top:40px;
+  width:60%;
+}
+#main #home_top #home_upload .head {
+  margin-top:-3em;
+}
+
+#main #home_top #home_upload .head .title{
+   font-size:110px;
+}
+#main #home_top #home_upload .subtitle{
+  font-size:24px;
+  line-height:28px;
+  font-weight:300;
+  letter-spacing:0.25px;
+  color:rgba(0, 0, 0, 0.6);
+  padding-top:5px;
+}
+
 #booknow {
-  width: 555px;
-  height: 167px;
-  margin-top: 50px;
-  border-radius: 18px;
-  background-color: rgb(88, 173, 173);
+ display:flex;
+ flex-direction:column;
+ padding-left:24px;
+ padding-right:100px;
 }
+
 #bookflex {
   display: flex;
+ background-color: rgb(88,173,173);
+ align-items:center;
+ justify-content: space-between;
+ border-radius:18px;
+ color:white;
+ width: 80%;
+ height:160px;
+ margin-top:40px;
+ /* position:relative; */
+}
+#booknow .begin-cont{
+  width:400px;
+
+}
+#booknow .begin{
+  margin:0px;
+  font-size:20px;
+ 
+}
+#booknow .book_cons{
+  font-size:15px;
+  line-height:24px;
+  font-weight:800;
+  background-color: #000;
+  width:270px;
+  padding:13px;
+  border-radius: 20px;
+  color:#f6f6f6;
+  margin-top:24px;
+  border:none;
 }
 #bookimg {
   margin-left: -200px;
   margin-top: 18px;
+  position:absolute;
+  bottom:0px;
+  border-radius:18px;
+  width:200px;
 }
+#bookflex .doctor_img{
+  border-radius:18px;
+  margin-left: -15em;
+  margin-bottom: 37px;
+}
+/* second part css */
 #home_img {
   display: flex;
-  margin-left: 100px;
+  
+ 
+
 }
 #image1 {
   width: 220px;
@@ -36,7 +101,7 @@
   width: 100%;
   height: 100%;
   border-radius: 39px;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   object-fit: cover;
 }
 #image2 {
@@ -52,7 +117,7 @@
   width: 100%;
   height: 100%;
   border-radius: 22px;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   object-fit: cover;
 }
 #image3 {
@@ -66,7 +131,7 @@
 #image3 > img {
   width: 100%;
   height: 100%;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   object-fit: cover;
   border-radius: 22px;
 }
