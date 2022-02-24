@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#prod_buttons{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+#hair_prod{
+  border: 0px;
+  padding: 5px 30px 5px 30px;
+  border-radius: 2px;
+}
+#skin_prod{
+  border: 0px;
+  padding: 5px 30px 5px 30px;
+  border-radius: 2px;
+}
+#weight_prod{
+  border: 0px;
+  padding: 5px 30px 5px 30px;
+  border-radius: 2px;
+}
+#pcos_prod{
+  border: 0px;
+  padding: 5px 30px 5px 30px;
+  border-radius: 2px;
+}
+#feminine_prod{
+  border: 0px;
+  padding: 5px 30px 5px 30px;
+  border-radius: 2px;
+}
+
+
+#prod_container {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 20px;
+}
+#prod_container > div {
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#product_image {
+  width: 100%;
+  border-radius: 15px;
+}
+#star_image {
+  margin: 10px;
+  width: 50%;
+}
+
+#prod_container p {
+  margin: 10px;
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+}
+
+#prod_container h3 {
+  margin: 5px 10px 5px 10px;
+  font-family: "Sen", sans-serif;
+}
+#prod_container s {
+  margin-top: 6px;
+  font-family: "Sen", sans-serif;
+  color: #292929;
+}
+
+#prod_container button {
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+}

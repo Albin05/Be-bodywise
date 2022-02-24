@@ -1,10 +1,11 @@
-.container-fluid {
-  height: 1000px;
-}
 body {
   font-family: Avenir, serif;
   color: #111d3c;
 }
+#book_appt{
+  padding-top: 60px;
+}
+
 /* div {
   border: 1px solid black;
 } */
@@ -15,9 +16,7 @@ body {
   position: absolute;
   z-index: 1;
 }
-.container {
-  height: 900px;
-}
+
 .steps_containerb {
   width: 400px;
   display: flex;
@@ -108,10 +107,19 @@ body {
 .step_optionskinb,
 .step_optionpcosb,
 .step_optionweightb,
-.step_optionnutritionb,
 .step_optionutib {
   display: flex;
   align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  color: white;
+  margin-bottom: 6px;
+}
+.step_optionnutritionb{
+  display: flex;
+  align-items: center;
+  width: 360px;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid grey;

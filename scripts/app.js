@@ -1,20 +1,62 @@
+let cart_data = JSON.parse(localStorage.getItem("cart_data")) || [];
+
 function appendproducts(data, parent){
     data.forEach( (el) => {
         let div = document.createElement("div");
 
         let image = document.createElement("img");
+        image.setAttribute("id","product_image")
         image.src = el.url;
 
+        let star = document.createElement("img");
+        star.setAttribute("id", "star_image")
+
+        if(el.rating == 4){
+            star.src = "https://cdn.discordapp.com/attachments/945524831842095116/945981157395300402/4starratee.png"
+        }
+        else if(el.rating == 4.5){
+            star.src = "https://cdn.discordapp.com/attachments/945524831842095116/945981157604990976/4.5starratee.png"
+        }
+        else if(el.rating == 5){
+            star.src = "https://cdn.discordapp.com/attachments/945524831842095116/945981157860859924/5starratee.png"
+        }
+        
         let heading = document.createElement("p");
         heading.innerText = el.heading;
 
-        let price = document.createElement("h3");
-        price.innerText = el.price;
+        let price_div = document.createElement("div");
+        price_div.style.display = "flex"
 
-        div.append(image,heading,price);
+        let price = document.createElement("h3");
+        price.innerText = `₹${el.price}`;
+
+        let strikedprice = document.createElement("s")
+        strikedprice.innerText = el.strikedprice;
+
+        let uses = document.createElement("p");
+        uses.innerText = `FOR ${el.use}`;
+
+        let ingredients = document.createElement("p");
+        ingredients.innerText = `WITH ${el.ingredients}`;
+
+        let button = document.createElement("button");
+        button.innerText = "Add to Cart";
+        button.addEventListener("click", function(){
+            addtoCart(el);
+        })
+
+        price_div.append(price, strikedprice);
+
+        div.append(image, star, heading, price_div, uses, ingredients, button);
+
 
         parent.append(div);
     })
+}
+
+function addtoCart(el){
+    cart_data.push(el);
+    localStorage.setItem("cart_data", JSON.stringify(cart_data));
 }
 
 export default appendproducts;
