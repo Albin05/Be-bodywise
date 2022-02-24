@@ -20,17 +20,20 @@ function appendproducts(data, parent){
         else if(el.rating == 5){
             star.src = "https://cdn.discordapp.com/attachments/945524831842095116/945981157860859924/5starratee.png"
         }
+
+        let content_div = document.createElement("div");
+        content_div.setAttribute("id", "prod_contenets");
         
         let heading = document.createElement("p");
         heading.innerText = el.heading;
 
         let price_div = document.createElement("div");
-        price_div.style.display = "flex"
+        price_div.style.display = "flex";
 
-        let price = document.createElement("h3");
+        let price = document.createElement("h4");
         price.innerText = `₹${el.price}`;
 
-        let strikedprice = document.createElement("s")
+        let strikedprice = document.createElement("s");
         strikedprice.innerText = el.strikedprice;
 
         let uses = document.createElement("p");
@@ -40,6 +43,7 @@ function appendproducts(data, parent){
         ingredients.innerText = `WITH ${el.ingredients}`;
 
         let button = document.createElement("button");
+        button.setAttribute("class", "prod_button");
         button.innerText = "Add to Cart";
         button.addEventListener("click", function(){
             addtoCart(el);
@@ -47,7 +51,9 @@ function appendproducts(data, parent){
 
         price_div.append(price, strikedprice);
 
-        div.append(image, star, heading, price_div, uses, ingredients, button);
+        content_div.append(heading, price_div, uses, ingredients);
+
+        div.append(image, star, content_div, button);
 
 
         parent.append(div);
