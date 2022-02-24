@@ -39,7 +39,6 @@
 }
 
 
-
 #prod_container {
   width: 50%;
   margin: auto;
@@ -75,4 +74,11 @@
   margin-top: 6px;
   font-family: "Sen", sans-serif;
   color: #292929;
+}
+
+#prod_container button {
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
 }
