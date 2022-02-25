@@ -135,3 +135,26 @@
   object-fit: cover;
   border-radius: 22px;
 }
+
+/* btn css*/
+#home_button{
+  display: flex;
+  width: 80%;
+  height: 400px;
+  margin-left: 130px;
+}
+#home_button > div{
+  width: 20%;
+  margin: auto;
+}
+#home_button > div >button >img{
+  width: 210px;
+  height: 280px; 
+}
+#home_button > div >button{
+  margin-top: -30px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  height: 100%;
+}
