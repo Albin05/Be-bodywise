@@ -796,3 +796,83 @@ text-decoration: none;
   font-size: 20px;
   color:rgb(118,118,118);
 }
+
+
+/* All Banners css */
+
+
+#main_organs_blue{
+  display: flex;
+  width: 100%;
+  background-color: #416d96;
+}
+#main_organs_green{
+  display: flex;
+  width: 100%;
+  background-color: #2a8372;
+}
+#main_organs_pink{
+  display: flex;
+  width: 100%;
+  background-color: #675680;
+}
+#main_organs_mehroon{
+  display: flex;
+  width: 100%;
+  background-color: #984244;
+}
+#main_organs_corona{
+  display: flex;
+  width: 100%;
+  background-color: #5e93bd;
+}
+
+.main_organs_text{
+  width: 70%;
+  margin:40px 0px 0px 300px  ;
+
+  
+}
+.text_h2{
+     color: white;
+      font-size: 40px;
+      line-height: 68px;
+      letter-spacing: 0.25px;
+      text-align:left;
+      font-weight: 500;
+      font-family: Avenir;
+      margin-bottom: -5px;
+    }
+.text_p{
+  width: 700px;
+color: #c2cdd0;
+margin: 0px 0px 50px;
+font-size: 20px;
+line-height: 33px;
+letter-spacing: 0.25px;
+text-align: left;
+font-weight: 300;
+font-family: Avenir;
+margin-bottom: 20px;
+}
+
+
+.main_organs_image{
+width:30%
+}
+
+.text_button{
+margin: 0px;
+font-size: 18px;
+line-height: 20px;
+color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0.1);
+padding: 11px 36px;
+border-radius: 14px;
+font-weight: 600;
+cursor: pointer;
+border: none;
+}
+.main_organs_image img{
+  margin-left:40px;
+}
