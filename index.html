@@ -9,25 +9,34 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <div id="nav_container">
-    </div>
+
+    <!-- Navbar Section -->
+    <div id="nav_container"></div>
+
+    <!-- Body First row -->
+
     <div id="main">
         <div id="home_top">
             <div id="home_upload">
-                <div>
-                    <h1>Be Bodywise</h1>
-                    <p>The wisdom to stop the experiments and get health & wellness solutions from experts</p>
+                <div class="head">
+                 <span class="title">Be Bodywise</span>
                 </div>
-                <div id="bookflex">
-                    <div id="booknow">
-                        <p>Begin your journey with a Free Doctor or Nutritionist Consult</p>
-                        <button>Book Now</button>
-                    </div>
-                    <div id="bookimg">
-                        <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1618984052/new%20home/Doc.png" alt="">
-                    </div>
-                </div>
-            </div>
+ 
+                 <span class="subtitle">The wisdom to stop the experiments and get health & wellness solutions from experts</span>
+ 
+                 <div id="bookflex">
+                     <div id="booknow">
+                         <div class="begin-cont">
+                             <span class="begin">Begin your journey with a Free Doctor or Nutritionist Consult</span>
+                         </div>
+ 
+                         <button class="book_cons">Book Now</button>
+                     </div>
+                     <div class="bookimg">
+                         <img class="doctor_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1618984052/new%20home/Doc.png" alt="">
+                     </div>
+                 </div>
+             </div>
             <div id="home_img">
                 <div id="image1">
                     <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1618391146/new%20home/image_24_3.png" alt="">
@@ -44,11 +53,187 @@
         </div>
     </div>
 
+    <!--Home Button-->
+    <div id="home_button">
+        <div id="hair_btn">
+            <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1623302237/new%20home/Hair_Desktop_new.png"></button>
+        </div>
+        <div id="skin_btn">
+            <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1639992700/new%20home/Skin_Blue_Desktop.png"></button>
+        </div>
+        <div id="nutrition_btn">
+            <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1636470038/new%20home/Nutrition_Desktop_new.png"></button>
+        </div>
+        <div id="pcos_btn">
+            <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1634886012/new%20home/UPDATED_PCOS/PCOS_Desktop_N2.png"></button>
+        </div>
+        <div id="intimate-btn">
+            <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1623302237/new%20home/UTI_Desktop_new.png"></button>
+        </div>
+    </div>
 
+    <div id="prod_buttons">
+        <button id="hair_prod">Hair</button>
+        <button id="skin_prod">Skin</button>
+        <button id="weight_prod">Weight</button>
+        <button id="pcos_prod">PCOS</button>
+        <button id="feminine_prod" onclick="femprod()">Feiminine Care</button>
+    </div>
+    <div class="shcontainer">
+        <section class="sproduct"> 
+            <button class="spre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="snxt-btn"><img src="images/arrow.png" alt=""></button>
+            <div class="sproduct-container">
+                <div class="sproduct-card">
+                    <div>
+                        <img class="sproduct_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1613991979/staging/products/hair-health-gummies/Carousel%20NEW/Hair_white-BG.jpg">
+                        <img class="sstar_image" src="https://cdn.discordapp.com/attachments/945524831842095116/945981157395300402/4starratee.png">
+                        <p>Biotin Hair Gummies (30)</p>
+                        <div style="display: flex;">
+                            <h3>₹499</h3>
+                            <s></s>
+                        </div>
+                        <p>FOR Hair growth &amp; strength</p>
+                        <p>WITH Biotin 5000 MCG, Multivitamins, Zinc</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sproduct-card">
+                    <div>
+                        <img class="sproduct_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1620062959/staging/products/buying-options/Hair%20fall%20Control%20Starter%20Pack/New%20Carousel/Hair_fall_Control_Starter_Pack.jpg">
+                        <img class="sstar_image" src="https://cdn.discordapp.com/attachments/945524831842095116/945981157395300402/4starratee.png">
+                        <p>Hair Fall Control Starter Pack</p>
+                        <div style="display: flex;">
+                            <h3>₹849</h3>
+                            <s>949</s>
+                        </div>
+                        <p>FOR Hair Growth &amp; Strengthening</p>
+                        <p>WITH Onion Hair Oil, Biotin Shampoo</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sproduct-card">
+                    <div>
+                        <img class="sproduct_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1640771666/staging/products/buying-options/Anti%20Dandruff%20Starter%20Pack/CAROUSEL/ADSP_1000x750.jpg">
+                        <img class="sstar_image" src="https://cdn.discordapp.com/attachments/945524831842095116/945981157604990976/4.5starratee.png">
+                        <p>Anti Dandruff Starter Pack</p>
+                        <div style="display: flex;">
+                            <h3>₹599</h3>
+                            <s>699</s>
+                        </div>
+                        <p>FOR Dandruff Control</p>
+                        <p>WITH 1% Keto Shampoo, Anti dandruff Lotion</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sproduct-card">
+                    <div>
+                        <img class="sproduct_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1602319806/staging/products/Conditioner%20-pdp/1600x1200.png">
+                        <img class="sstar_image" src="https://cdn.discordapp.com/attachments/945524831842095116/945981157604990976/4.5starratee.png">
+                        <p>Deep Conditioner for Dry Hair</p>
+                        <div style="display: flex;">
+                            <h3>₹399</h3>
+                            <s>499</s>
+                        </div>
+                        <p>FOR Dry, damaged, dehydrated hair</p>
+                        <p>WITH Silk Protein, Biotin, Niacinamide, Shea Butter</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sproduct-card">
+                    <div>
+                        <img class="sproduct_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1620047677/staging/products/buying-options/Hair%20Health%20Starter%20Pack/New%20Carousel/Hair_Health_Starter_Pack.jpg">
+                        <img class="sstar_image" src="https://cdn.discordapp.com/attachments/945524831842095116/945981157395300402/4starratee.png">
+                        <p>Hair Health Starter Pack</p>
+                        <div style="display: flex;">
+                            <h3>₹799</h3>
+                            <s>999</s>
+                        </div>
+                        <p>FOR Hair Health, Hair Growth</p>
+                        <p>WITH Biotin Shampoo, 5000 MCG Biotin Gummies (30)</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sproduct-card">
+                    <div><img class="sproduct_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1604072938/staging/products/buying-options/Hair%20Restore%20Edition/Hair_Restore_CAT_PAGE.png">
+                        <img class="sstar_image" src="https://cdn.discordapp.com/attachments/945524831842095116/945981157395300402/4starratee.png">
+                        <p>Hair Restore Edition</p>
+                        <div style="display: flex;">
+                            <h3>₹1499</h3>
+                            <s>1946</s>
+                        </div>
+                        <p>FOR Hair Fall Control</p>
+                        <p>WITH Silk Protein Conditioner, Biotin Shampoo, Onion Hair Oil</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sproduct-card">
+                    <div>
+                        <img class="sproduct_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/staging/products/hair-strengthening-serum/1_Product_Image_2.jpg">
+                        <img class="sstar_image" src="https://cdn.discordapp.com/attachments/945524831842095116/945981157604990976/4.5starratee.png">
+                        <p>Hair Strengthening Serum</p>
+                        <div style="display: flex;">
+                            <h3>₹449</h3>
+                            <s>499</s>
+                        </div>
+                        <p>FOR Frizzy, unruly hair</p>
+                        <p>WITH Argan oil, Olive oil, Sunflower oil</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div> 
 
+    <!-- feelingconfused -->
+    <div class="feeling-main">
+        <div class="feeling-container">
+            <div class="feeling-cont">
+                <div class="feeling-img">
+                    <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto/v1611455725/Bodywise/Random/Rectangle_94.png" alt="">
+                </div>
+                <div class="feeling-content">
+                    <h2 class="feeling-h">Feeling confused?</h2>
+                    <p class="feeling-p">Take a quick assessment co-created with our expert doctors</p>
+                    <button class="feeling-btn">
+                        <a href="#"> Consult Doctor Now</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- how to work -->
     
+    <div class="how-main-container">
+        <div class="how-container">
+            <h3>How It Works</h3>
+            <div class="how-flex">
+                <div class="how-row">
+                    <img src="images/01.png" alt="">
+                    <h4>Health Assessment</h4>
+                    <p>Let us get to know you by asking a few questions. We will lay out actionable steps for you to achieve your wellness goals.</p>
+                </div>
+                <div class="how-row">
+                    <img src="images/02.png" alt="">
+                   <h4>Online Doctor Consultation </h4>
+                   <p>Get connected with a doctor to discuss your health concerns and understand the treatment options. Find products that are right for your needs.</p>
+               </div>
+               <div class="how-row">
+                  <img src="images/03.png" alt="">
+                  <h4>Instant Product Delivery</h4>
+                  <p>We know you’re busy. We will get your treatment shipped to your door in 3-5 days.</p>
+                </div>
+            </div>
+        </div>
+      
+    </div>
     <div class="footer" id="foot_cont"></div>
 </body>
 </html>
+
 <script type="module" src="index.js"></script>
+
+<script src="./scripts/data.js"></script>
+
