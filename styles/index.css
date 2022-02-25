@@ -702,3 +702,97 @@ button:hover {
 .denxt-btn:hover img {
   opacity: 1;
 }
+
+
+/* feeling confused */
+.feeling-main{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  background-color: rgb(246,246,246);
+}
+.feeling-cont{
+  display: flex;
+  width: 100%;
+}
+.feeling-img{
+ margin-left:12%;
+
+}
+.feeling-img img{
+   margin-top:-2em;
+   width:130%;
+}
+.feeling-content{
+  margin-left:4%;
+}
+.feeling-h{
+     line-height: 25px;
+      letter-spacing: .25px;
+      text-align: left;
+      font-size: 36px;
+      color: #000;
+      font-weight: 500;
+      margin-bottom: 0;
+      display: block;
+}
+.feeling-p{
+margin-bottom: 1rem;
+font-size: 24px;
+color:rgb(118,118,118);
+}
+.feeling-btn{
+background: #000;
+border-radius: 20px;
+align-items: center;
+padding: 18px 80px;
+width: 365px;
+height: 60px;
+border: 1px solid #000;
+width: fit-content;
+}
+.feeling-btn a{
+color: #fff;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+letter-spacing: .15px;
+text-decoration: none;
+}
+
+/* how it works */
+
+.how-main-container{
+  width:100%;
+ 
+}
+.how-container{
+  width:80%;
+  margin:auto;
+ 
+}
+.how-container h3{
+
+  font-size:30px;
+}
+.how-flex{
+  display:flex;
+  
+  justify-content: space-around;
+ 
+}
+.how-row{
+  width:40%;
+  margin-left:1%;
+  margin-right:1%;
+
+}
+.how-row h4{
+  font-size:25px;
+}
+.how-row p{
+  margin-top: -1em;
+  font-size: 20px;
+  color:rgb(118,118,118);
+}
