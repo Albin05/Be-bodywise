@@ -205,7 +205,12 @@
 } */
 .shcontainer {
   width: 1000px;
-  margin-left: 200px;
+  margin-left: 300px;
+}
+.sh1container {
+  width: 1000px;
+  margin-left: 30%;
+  margin-top: -50px;
 }
 /* div {
   border: 1px solid blue;
@@ -294,6 +299,14 @@ button:hover {
 }
 
 .shcontainer .sproduct-card button {
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: rgb(102, 80, 154);
+  color: white;
+}
+.sh1container .sproduct-card button {
   width: 100%;
   border: 0px;
   padding: 10px;
@@ -703,176 +716,164 @@ button:hover {
   opacity: 1;
 }
 
-
 /* feeling confused */
-.feeling-main{
+.feeling-main {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
-  background-color: rgb(246,246,246);
+  background-color: rgb(246, 246, 246);
 }
-.feeling-cont{
+.feeling-cont {
   display: flex;
   width: 100%;
 }
-.feeling-img{
- margin-left:12%;
-
+.feeling-img {
+  margin-left: 12%;
 }
-.feeling-img img{
-   margin-top:-2em;
-   width:130%;
+.feeling-img img {
+  margin-top: -2em;
+  width: 130%;
 }
-.feeling-content{
-  margin-left:4%;
+.feeling-content {
+  margin-left: 4%;
 }
-.feeling-h{
-     line-height: 25px;
-      letter-spacing: .25px;
-      text-align: left;
-      font-size: 36px;
-      color: #000;
-      font-weight: 500;
-      margin-bottom: 0;
-      display: block;
+.feeling-h {
+  line-height: 25px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  font-size: 36px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 0;
+  display: block;
 }
-.feeling-p{
-margin-bottom: 1rem;
-font-size: 24px;
-color:rgb(118,118,118);
+.feeling-p {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  color: rgb(118, 118, 118);
 }
-.feeling-btn{
-background: #000;
-border-radius: 20px;
-align-items: center;
-padding: 18px 80px;
-width: 365px;
-height: 60px;
-border: 1px solid #000;
-width: fit-content;
+.feeling-btn {
+  background: #000;
+  border-radius: 20px;
+  align-items: center;
+  padding: 18px 80px;
+  width: 365px;
+  height: 60px;
+  border: 1px solid #000;
+  width: fit-content;
 }
-.feeling-btn a{
-color: #fff;
-font-weight: 500;
-font-size: 20px;
-line-height: 27px;
-text-align: center;
-letter-spacing: .15px;
-text-decoration: none;
+.feeling-btn a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  text-decoration: none;
 }
 
 /* how it works */
 
-.how-main-container{
-  width:100%;
- 
+.how-main-container {
+  width: 100%;
 }
-.how-container{
-  width:80%;
-  margin:auto;
- 
+.how-container {
+  width: 80%;
+  margin: auto;
 }
-.how-container h3{
+.how-container h3 {
+  font-size: 30px;
+}
+.how-flex {
+  display: flex;
 
-  font-size:30px;
-}
-.how-flex{
-  display:flex;
-  
   justify-content: space-around;
- 
 }
-.how-row{
-  width:40%;
-  margin-left:1%;
-  margin-right:1%;
-
+.how-row {
+  width: 40%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
-.how-row h4{
-  font-size:25px;
+.how-row h4 {
+  font-size: 25px;
 }
-.how-row p{
+.how-row p {
   margin-top: -1em;
   font-size: 20px;
-  color:rgb(118,118,118);
+  color: rgb(118, 118, 118);
 }
-
 
 /* All Banners css */
 
-
-#main_organs_blue{
+#main_organs_blue {
   display: flex;
   width: 100%;
   background-color: #416d96;
 }
-#main_organs_green{
+#main_organs_green {
   display: flex;
   width: 100%;
   background-color: #2a8372;
 }
-#main_organs_pink{
+#main_organs_pink {
   display: flex;
   width: 100%;
   background-color: #675680;
 }
-#main_organs_mehroon{
+#main_organs_mehroon {
   display: flex;
   width: 100%;
   background-color: #984244;
 }
-#main_organs_corona{
+#main_organs_corona {
   display: flex;
   width: 100%;
   background-color: #5e93bd;
 }
 
-.main_organs_text{
+.main_organs_text {
   width: 70%;
-  margin:40px 0px 0px 300px  ;
-
-  
+  margin: 40px 0px 0px 300px;
 }
-.text_h2{
-     color: white;
-      font-size: 40px;
-      line-height: 68px;
-      letter-spacing: 0.25px;
-      text-align:left;
-      font-weight: 500;
-      font-family: Avenir;
-      margin-bottom: -5px;
-    }
-.text_p{
+.text_h2 {
+  color: white;
+  font-size: 40px;
+  line-height: 68px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  font-weight: 500;
+  font-family: Avenir;
+  margin-bottom: -5px;
+}
+.text_p {
   width: 700px;
-color: #c2cdd0;
-margin: 0px 0px 50px;
-font-size: 20px;
-line-height: 33px;
-letter-spacing: 0.25px;
-text-align: left;
-font-weight: 300;
-font-family: Avenir;
-margin-bottom: 20px;
+  color: #c2cdd0;
+  margin: 0px 0px 50px;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  font-weight: 300;
+  font-family: Avenir;
+  margin-bottom: 20px;
 }
 
-
-.main_organs_image{
-width:30%
+.main_organs_image {
+  width: 30%;
 }
 
-.text_button{
-margin: 0px;
-font-size: 18px;
-line-height: 20px;
-color: rgb(255, 255, 255);
-background-color: rgba(255, 255, 255, 0.1);
-padding: 11px 36px;
-border-radius: 14px;
-font-weight: 600;
-cursor: pointer;
-border: none;
+.text_button {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 11px 36px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
 }
-.main_organs_image img{
-  margin-left:40px;
+.main_organs_image img {
+  margin-left: 40px;
 }
