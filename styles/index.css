@@ -877,3 +877,195 @@ button:hover {
 .main_organs_image img {
   margin-left: 40px;
 }
+
+/* what expert */
+
+.expect-main{
+  padding:3%;
+  width:70%;
+  margin:auto;
+}
+.expect-main h3{
+  font-size:25px;
+  margin-left:20px;
+}
+.expect-container{
+ display:flex;
+ position:relative;
+} 
+/* 1months */
+.nutrition-expect-1month{
+  background-color: rgb(0,178,155);
+}
+.skin-expect-1month{
+  background-color:  rgb(92,163,229);
+}
+.hair-expect-1month{
+  background-color:  rgb(140,121,185);
+}
+
+.expect-1month{
+ 
+  box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
+  border-radius: 20px;
+  margin: 0 15px;
+  flex-grow: 1;
+  flex-basis: 0;
+  width:30%;
+  height: 220px;
+}
+.expect-1month .months{
+ position:relative;
+ padding:20px;
+
+}
+.expect-1month .months .months1-3 h6{
+ font-size:25px;
+ font-weight:500;
+ margin:0 0 8px;
+ color:white;
+}
+.expect-1month .months .months1-3 p{
+font-size: 18px;
+line-height: 16px;
+letter-spacing: .25px;
+color: #fff;
+opacity: .7;
+width:90%;
+}
+.months1-img{
+position: absolute;
+opacity: .1;
+/* background:rgb(157,189,215); */
+height: 130px;
+width: 130px;
+right: -7%;
+top: -11%;
+/* border-radius: 0 0  162px 0; */
+}
+.months1-img img{
+ width:35%;
+ margin-top:20%;
+ margin-left:35%;
+}
+
+/* 3months */
+.pcos-expect-3months{
+background-color: rgb(241,167,169);
+}
+.fermine-expect-3months{
+background-color: rgb(157,189,215);
+}
+.nutrition-expect-3months{
+ background-color: rgb(0,128,110);
+}
+.skin-expect-3months{
+ background-color: rgb(46,117,184);
+}
+.hair-expect-3months{
+ background-color: rgb(111,87,168);
+}
+.expect-3months{
+
+  box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
+  border-radius: 20px;
+  margin: 0 15px;
+  flex-grow: 1;
+  flex-basis: 0;
+  width:30%;
+  height: 220px;
+}
+
+.expect-3months .months{
+ position:relative;
+ padding:20px;
+
+}
+.expect-3months .months .months3-6 h6{
+ font-size:25px;
+ font-weight:500;
+ margin:0 0 8px;
+ color:white;
+}
+.expect-3months .months .months3-6 p{
+font-size: 18px;
+line-height: 16px;
+letter-spacing: .25px;
+color: #fff;
+opacity: .7;
+width:90%;
+}
+.months3-img{
+position: absolute;
+opacity: .1;
+/* background:rgb(157,189,215); */
+height: 130px;
+width: 130px;
+right: -7%;
+top: -11%;
+/* border-radius: 0 0  162px 0; */
+}
+.months3-img img{
+ width:35%;
+ margin-top:25%;
+ margin-left:35%;
+}
+/* 6months */
+.pcos-expect-6months{
+background-color: rgb(235,122,125);
+}
+.fermine-expect-6months{
+background-color: rgb(110, 158, 196);
+}
+.nutrition-expect-6months{
+ background-color: rgb(0,112,97);
+}
+.skin-expect-6months{
+ background-color: rgb(25,100,171);
+}
+.hair-expect-6months{
+ background-color: rgb(102,80,154);
+}
+.expect-6months{
+box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
+border-radius: 20px;
+margin: 0 15px;
+flex-grow: 1;
+flex-basis: 0;
+width:30%;
+height: 220px;
+}
+.expect-6months .months{
+ position:relative;
+ padding:20px;
+
+}
+.expect-6months .months .months3-6 h6{
+ font-size:25px;
+ font-weight:500;
+ margin:0 0 8px;
+ color:white;
+}
+.expect-6months .months .months3-6 p{
+font-size: 18px;
+line-height: 16px;
+letter-spacing: .25px;
+color: #fff;
+opacity: .7;
+width:90%;
+}
+.months6-img{
+position: absolute;
+opacity: .1;
+/* background:rgb(157,189,215); */
+height: 130px;
+width: 130px;
+right: -7%;
+top: -11%;
+/* border-radius: 0 0  162px 0; */
+}
+.months6-img img{
+ width:35%;
+ margin-top:25%;
+ margin-left:35%;
+}
