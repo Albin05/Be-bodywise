@@ -63,3 +63,22 @@ deproductContainers.forEach((deitem, i) => {
         deitem.scrollLeft -= containerWidth;
     })
 })
+
+
+// customer review
+const bhproductContainers = [...document.querySelectorAll('.customerpro-container')];
+const custnxtBtn = [...document.querySelectorAll('.custnxt-btn')];
+const custpreBtn = [...document.querySelectorAll('.custpre-btn')];
+
+bhproductContainers.forEach((cusitem, i) => {
+    let containerDimensions = cusitem.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    custnxtBtn[i].addEventListener('click', () => {
+        cusitem.scrollLeft += containerWidth;
+    })
+
+    custpreBtn[i].addEventListener('click', () => {
+        cusitem.scrollLeft -= containerWidth;
+    })
+})
