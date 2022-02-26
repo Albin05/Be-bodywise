@@ -1,13 +1,13 @@
 function navbar(){
     return `    <div id="nav_body">
-    <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt="beBodywise"></Button>
+    <button onclick="window.location.href='index.html'"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt="beBodywise"></Button>
 </div>
 <div id="nav_mid">
 <div id="nav_txt">
     <a href="bookAppointment.html">Book Doctor Consultation</a>
 </div>
 <div id="nav_txt">
-    <a href="">Take Wellness Assessment</a>
+    <a href="assessment.html">Take Wellness Assessment</a>
 </div>
 <div>
     <select id="nav_opt">
@@ -23,7 +23,7 @@ function navbar(){
     <a href="products.html">All Products</a>
 </div>
 <div id="nav_txt">
-    <a href="">Refer & Earn</a>
+    <a href="refer.html">Refer & Earn</a>
 </div>
 </div>
 <div id="nav_right">
@@ -31,7 +31,7 @@ function navbar(){
     <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_search.svg" alt=""></button>
 </div>
 <div id="nav_btn">
-    <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_user.svg" alt=""></button>
+    <button onclick="window.location.href='login.html'"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_user.svg" alt=""></button>
 </div>
 <div id="nav_btn">
     <button><a href="https://wa.me/917710096671?text=Hey%21+I+would+like+to+know+more+about+Bodywise." target="_blank"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/WhastApp.svg" alt=""></a></button>
