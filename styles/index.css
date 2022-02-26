@@ -212,6 +212,11 @@
   margin-left: 30%;
   margin-top: -50px;
 }
+.su1container {
+  width: 1000px;
+  margin-left: 30%;
+  margin-top: -50px;
+}
 /* div {
   border: 1px solid blue;
 } */
@@ -324,6 +329,14 @@ button:hover {
   color: white;
 }
 .sucontainer .sproduct-card button {
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: rgb(98, 150, 191);
+  color: white;
+}
+.su1container .sproduct-card button {
   width: 100%;
   border: 0px;
   padding: 10px;
