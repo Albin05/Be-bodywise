@@ -89,11 +89,11 @@ bfafproductContainers.forEach((bfafitem, i) => {
 
 
 // customer review
-const bhproductContainers = [...document.querySelectorAll('.customerpro-container')];
+const custproductContainers = [...document.querySelectorAll('.customerpro-container')];
 const custnxtBtn = [...document.querySelectorAll('.custnxt-btn')];
 const custpreBtn = [...document.querySelectorAll('.custpre-btn')];
 
-bhproductContainers.forEach((cusitem, i) => {
+custproductContainers.forEach((cusitem, i) => {
     let containerDimensions = cusitem.getBoundingClientRect();
     let containerWidth = containerDimensions.width;
 
