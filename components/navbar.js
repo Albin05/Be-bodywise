@@ -37,7 +37,7 @@ function navbar(){
     <button><a href="https://wa.me/917710096671?text=Hey%21+I+would+like+to+know+more+about+Bodywise." target="_blank"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/WhastApp.svg" alt=""></a></button>
 </div>
 <div id="nav_btn">
-    <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603950724/staging/Home/Images/u_shopping-bag.svg" alt=""></button>
+    <button onclick="window.location.href='cart.html'"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603950724/staging/Home/Images/u_shopping-bag.svg" alt=""></button>
 </div>
 </div>`;
 }
