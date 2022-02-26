@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+#prod_blank_top{
+  padding: 50px;
+}
+
 #prod_buttons {
   display: flex;
   justify-content: space-evenly;
