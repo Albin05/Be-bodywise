@@ -29,7 +29,8 @@ let prod_topbutton = document.getElementById("hair_prod");
 prod_topbutton.style.backgroundColor = "#66509a";
 prod_topbutton.style.color = "#ffffff";
 
-let prod_addcartbtn = document.querySelector(".prod_button");
+let prod_addcartbtn = document.getElementsByClassName("prod_button");
+
 
 
 let prod_textcont_count = document.getElementById("prod_topsection");
