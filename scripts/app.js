@@ -44,9 +44,10 @@ function appendproducts(data, parent){
 
         let button = document.createElement("button");
         button.setAttribute("class", "prod_button");
-        button.innerText = "Add to Cart";
+        button.innerText = "Add To Cart";
         button.addEventListener("click", function(){
             addtoCart(el);
+            alert("Added to Cart")
         })
 
         price_div.append(price, strikedprice);
