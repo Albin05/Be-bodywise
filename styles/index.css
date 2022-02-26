@@ -539,6 +539,7 @@ button:hover {
   height: 300px;
   overflow: hidden;
   padding: 20px;
+  margin-left: -11%;
 }
 
 .dhproduct-category {
@@ -638,6 +639,7 @@ button:hover {
   height: 300px;
   overflow: hidden;
   padding: 20px;
+  margin-left: -11%;
 }
 
 .deproduct-category {
@@ -700,7 +702,7 @@ button:hover {
 .denxt-btn {
   border: none;
   width: 10vw;
-  height: 99%;
+  height: 75%;
   position: absolute;
   top: 0;
   display: flex;
@@ -1106,4 +1108,27 @@ button:hover {
   border-radius: 0px 0px 15px 15px;
   background-color: rgb(241, 167, 169);
   color: white;
+}
+
+/* you matter to us */
+.UmatterAlot {
+  margin-left: 400px;
+  width: 100%;
+}
+.UmatterAlot > div > h2 {
+  font-size: 35px;
+}
+.umatterP {
+  width: 30%;
+  font-size: 20px;
+}
+
+/* meet Experts */
+.MeetExpert {
+  margin-left: 400px;
+  width: 100%;
+  margin-top: 5%;
+}
+.MeetExpert > div > h2 {
+  font-size: 35px;
 }
