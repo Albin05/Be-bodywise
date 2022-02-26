@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 #home_top {
   display: flex;
   width: 80%;
@@ -16,7 +23,7 @@
 }
 
 #main #home_top #home_upload .head .title {
-  font-size: 110px;
+  font-size: 100px;
 }
 #main #home_top #home_upload .subtitle {
   font-size: 24px;
