@@ -1065,3 +1065,17 @@ button:hover {
   margin-top: 25%;
   margin-left: 35%;
 }
+/* Nutrition  */
+.nutritionbannerBelow {
+  display: flex;
+  margin-left: 30%;
+  margin-top: -30px;
+}
+.nutritionbannerBelow .sproduct-card button {
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: rgb(102, 80, 154);
+  color: white;
+}
