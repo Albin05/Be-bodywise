@@ -6,6 +6,7 @@ The tech stack used is :
 * HTML5
 * CSS3
 * ES6 JavaScript
+* Bootstrap
 
 You can open the index.html file and start browsing the website.
 
