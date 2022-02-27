@@ -119,7 +119,9 @@
 .prod_button {
   background-color: #e8f4ff;
   color: black;
+  cursor: pointer;
 }
+
 
 /* feeling confused */
 .feeling-main{
