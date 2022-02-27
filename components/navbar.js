@@ -1,13 +1,13 @@
 function navbar(){
     return `    <div id="nav_body">
-    <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt="beBodywise"></Button>
+    <button onclick="window.location.href='index.html'"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt="beBodywise"></Button>
 </div>
 <div id="nav_mid">
 <div id="nav_txt">
     <a href="bookAppointment.html">Book Doctor Consultation</a>
 </div>
 <div id="nav_txt">
-    <a href="">Take Wellness Assessment</a>
+    <a href="assessment.html">Take Wellness Assessment</a>
 </div>
 <div>
     <select id="nav_opt">
@@ -23,7 +23,7 @@ function navbar(){
     <a href="products.html">All Products</a>
 </div>
 <div id="nav_txt">
-    <a href="">Refer & Earn</a>
+    <a href="refer.html">Refer & Earn</a>
 </div>
 </div>
 <div id="nav_right">
@@ -31,13 +31,13 @@ function navbar(){
     <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_search.svg" alt=""></button>
 </div>
 <div id="nav_btn">
-    <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_user.svg" alt=""></button>
+    <button onclick="window.location.href='login.html'"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_user.svg" alt=""></button>
 </div>
 <div id="nav_btn">
     <button><a href="https://wa.me/917710096671?text=Hey%21+I+would+like+to+know+more+about+Bodywise." target="_blank"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/WhastApp.svg" alt=""></a></button>
 </div>
 <div id="nav_btn">
-    <button><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603950724/staging/Home/Images/u_shopping-bag.svg" alt=""></button>
+    <button onclick="window.location.href='cart.html'"><img src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1603950724/staging/Home/Images/u_shopping-bag.svg" alt=""></button>
 </div>
 </div>`;
 }
@@ -52,42 +52,42 @@ function footer(){
                         </div>
                         <ul class="prod" class="ul">
                             <li  class="li">
-                                <a href="/hair">Hair</a>
+                                <a href="#">Hair</a>
                             </li>
                             <li  class="li">
-                                <a href="/skin">Skin</a>
+                                <a href="#">Skin</a>
                             </li>
                             <li  class="li">
-                                <a href="/nutrition">Nutrition</a>
+                                <a href="#">Nutrition</a>
                             </li>
                         </ul>
                         <ul class="prod1" class="ul">
                             <li class="li">
-                                <a href="/PCOS">PCOS</a>
+                                <a href="#">PCOS</a>
                             </li>
                             <li class="li">
-                                <a href="/intimate care">Intimate Care</a>
+                                <a href="#">Intimate Care</a>
                             </li>
                             <li class="li">
-                                <a href="/blog">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
                         </ul>
                     </div>
                     <div class="contact">
                         <ul  class="ul">
                             <li class="li">
-                                <a href="/contact">Contact Us</a>
+                                <a href="#">Contact Us</a>
                             </li>
                             <li class="li">
-                                <a href="/about us">About Us</a>
+                                <a href="#">About Us</a>
                             </li>
                         </ul>
                         <ul  class="ul">
                             <li class="li">
-                                <a href="/faqs">FAQs</a>
+                                <a href="#">FAQs</a>
                             </li>
                             <li class="li">
-                                <a href="/returns & refunds">Returns&Refunds</a>
+                                <a href="#">Returns&Refunds</a>
                             </li>
                         </ul>
                     </div>
@@ -95,17 +95,17 @@ function footer(){
                         <div class="adve1">
                             <ul class="f1"  class="ul">
                                 <li  class="li">
-                                <a href="/instagram">
+                                <a href="#">
                                     <img class="image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/insta.png" alt="">
                                 </a>
                                 </li>
                                 <li  class="li">
-                                    <a href="/facebook">
+                                    <a href="#">
                                         <img class="image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/fb.png" alt="">
                                 </a>
                                 </li>
                                 <li  class="li">
-                                    <a href="/youtube">
+                                    <a href="#">
                                         <img  class="image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/youtube.png" alt="">
                                 </a>
                                 </li>
@@ -113,9 +113,9 @@ function footer(){
                         </div>
                         <ul class="side"  class="ul">
                             <li class="li">
-                                <a href="/privacy policy">Privacy Policy</a>
+                                <a href="#">Privacy Policy</a>
                             </li>
-                            <li class="li"><a href="/join community">Join Community</a></li>
+                            <li class="li"><a href="#">Join Community</a></li>
                         </ul>
                         <p>Copyright © 2022 BeBodywise. All rights reserved</p>
                     </div>
