@@ -63,3 +63,64 @@ deproductContainers.forEach((deitem, i) => {
         deitem.scrollLeft -= containerWidth;
     })
 })
+
+
+
+// before after
+const bfafproductContainers = [...document.querySelectorAll('.bfafproduct-container')];
+const bfafnxtBtn = [...document.querySelectorAll('.bfafnxt-btn')];
+const bfafpreBtn = [...document.querySelectorAll('.bfafpre-btn')];
+
+bfafproductContainers.forEach((bfafitem, i) => {
+    let containerDimensions = bfafitem.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    bfafnxtBtn[i].addEventListener('click', () => {
+        bfafitem.scrollLeft += containerWidth;
+    })
+
+    bfafpreBtn[i].addEventListener('click', () => {
+        bfafitem.scrollLeft -= containerWidth;
+    })
+})
+
+
+
+
+
+// customer review
+const custproductContainers = [...document.querySelectorAll('.customerpro-container')];
+const custnxtBtn = [...document.querySelectorAll('.custnxt-btn')];
+const custpreBtn = [...document.querySelectorAll('.custpre-btn')];
+
+custproductContainers.forEach((cusitem, i) => {
+    let containerDimensions = cusitem.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    custnxtBtn[i].addEventListener('click', () => {
+        cusitem.scrollLeft += containerWidth;
+    })
+
+    custpreBtn[i].addEventListener('click', () => {
+        cusitem.scrollLeft -= containerWidth;
+    })
+})
+
+// bodywisehealth
+
+const bhproductContainers = [...document.querySelectorAll('.health-container')];
+const bhnxtBtn = [...document.querySelectorAll('.bhnxt-btn')];
+const bhpreBtn = [...document.querySelectorAll('.bhpre-btn')];
+
+bhproductContainers.forEach((bhitem, i) => {
+    let containerDimensions = bhitem.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    bhnxtBtn[i].addEventListener('click', () => {
+        bhitem.scrollLeft += containerWidth;
+    })
+
+    bhpreBtn[i].addEventListener('click', () => {
+        bhitem.scrollLeft -= containerWidth;
+    })
+});

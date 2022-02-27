@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+#prod_blank_top{
+  padding: 50px;
+}
+
 #prod_buttons {
   display: flex;
   justify-content: space-evenly;
@@ -115,7 +119,9 @@
 .prod_button {
   background-color: #e8f4ff;
   color: black;
+  cursor: pointer;
 }
+
 
 /* feeling confused */
 .feeling-main{

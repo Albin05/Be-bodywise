@@ -1,4 +1,12 @@
 import appendproducts from "./scripts/app.js"
+import {navbar, footer} from "./components/navbar.js";
+
+
+let navbar_div = document.getElementById("nav_container");
+navbar_div.innerHTML = navbar();
+
+let footer_content = document.getElementById("foot_cont");
+footer_content.innerHTML = footer();
 
 
 // Page loading
@@ -21,7 +29,13 @@ let prod_topbutton = document.getElementById("hair_prod");
 prod_topbutton.style.backgroundColor = "#66509a";
 prod_topbutton.style.color = "#ffffff";
 
-let prod_addcartbtn = document.querySelector(".prod_button");
+let prod_addcartbtn = document.querySelectorAll(".prod_button");
+
+for(let i = 0; i<prod_addcartbtn.length; i++){
+    
+    prod_addcartbtn[i].style.backgroundColor = "#66509a";
+    prod_addcartbtn[i].style.color = "#ffffff"
+}
 
 
 let prod_textcont_count = document.getElementById("prod_topsection");
@@ -49,8 +63,7 @@ function hairprod(){
     let prod_count = document.getElementById("prod_count");
     prod_count.innerText = `${data.length} products`;
 
-    
-    
+
 }
 
 let skin_cont = document.getElementById("skin_prod");
@@ -70,7 +83,6 @@ function skinprod(){
 
     let prod_count = document.getElementById("prod_count");
     prod_count.innerText = `${data.length} products`;
-
     
 }
 
