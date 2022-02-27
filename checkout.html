@@ -90,7 +90,7 @@
                     <div>
                         <div class="check_btn">
                             <input class="check_coupon" type="text">
-                            <button id="chk_btn" onclick="clicked()">Apply</button>
+                            <button id="chk_btn">Apply</button>
                         </div>
                         <div class="check_main">
                             <p class="check_char" style="color: #379f8e;">Coupon Discount:</p>
@@ -107,6 +107,7 @@
             </div>
         </div>
     </div>
+    <div style="padding: 150px;"></div>
     <div class="footer" id="foot_cont"></div>
 </body>
 </html>
@@ -127,7 +128,7 @@ arr.map(function (el) {
     let div = document.createElement("div")
     div.style.display="flex"
     div.style.height="50px"
-    div.style.width="100px"
+    div.style.width="400px"
     div.style.justifyContent="space-between"
 
     let p1 = document.createElement("p")
@@ -146,18 +147,26 @@ arr.map(function (el) {
 
 });
 
-    let discount = JSON.parse(localStorage.getItem("cart_data"))
 
     let sum = 0
-    for(i=0 ; i<discount.length ; i++){
-        sum = sum + discount[i].price
+    for(let i=0 ; i<arr.length ; i++){
+        sum = sum + arr[i].price
     }
-    document.querySelector(".check_total").textContent=sum;
+    var total_div = document.getElementsByClassName("check_total");
+    for(let j = 0; j<total_div.length; j++){
+        total_div[j].innerHTML = sum;
+    }
+
+    var promo = document.getElementById("chk_btn");
+    promo.addEventListener("click", function() {
+        clicked();
+    })
+    
     function clicked(){
         let val = document.querySelector(".check_coupon").value
         if(val=="masaimasai"){
             alert("Coupon Code Applied")
-            let res = sum*0.3
+            let res = sum*0.2
             document.querySelector(".check_disc").textContent = res;
             let total = sum - res ;
             document.querySelector(".check_total").textContent=total;

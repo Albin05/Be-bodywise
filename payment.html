@@ -54,7 +54,7 @@
 
     </div>
     <div id="pay_div">
-            <p id="card_head">Fill all the details bellow</p>
+            <p id="card_head">Fill all the details below</p>
             <p>CARD NUMBER</p>
             <input  id="pay_num" type="number" placeholder="4000 3000 2000 1000">
             <br>
@@ -67,7 +67,7 @@
             <p>EXPIRE DATE</p>
             <input id="pay_date" type="date">
             <br>
-            <button onclick="pay_process()">Pay</button>
+            <button id="payment_process">Pay</button>
    
     </div>
     <div class="footer" id="foot_cont"></div>
@@ -83,6 +83,8 @@ navbar_div.innerHTML = navbar();
 let footer_content = document.getElementById("foot_cont");
 footer_content.innerHTML = footer();
 
+let payment = document.getElementById("payment_process");
+payment.addEventListener("click", pay_process)
 
 
     function pay_process(){
