@@ -44,9 +44,7 @@ body {
 #nav_mid > :nth-child(2){
   margin-left: 3%;
 }
-#nav_mid > :nth-child(4),:nth-child(5){
-  margin-left: -5%;
-}
+
 #nav_txt {
   font-size: 100%;
   padding-top: 2%;

@@ -12,6 +12,7 @@ body {
 #cart_container {
   width: 450px;
   margin: auto;
+  
 }
 #cart_container > h1 {
   text-align: center;
@@ -108,4 +109,7 @@ body {
 #cart_empty_msg {
   margin-top: 300px;
   text-align: center;
+}
+#cart_padding {
+  padding: 50px;
 }
