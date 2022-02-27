@@ -3,8 +3,8 @@
 This is a clone of the Be bodywise website (url : https://bebodywise.com/)
 
 The tech stack used is :
-* HTML
-* CSS
+* HTML5
+* CSS3
 * ES6 JavaScript
 
 You can open the index.html file and start browsing the website.
