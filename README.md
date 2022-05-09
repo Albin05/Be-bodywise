@@ -16,6 +16,12 @@ You can open the index.html file and start browsing the website.
 
 We deployed the front-end on Netlify and the backend on Heroku.
 
+
+## Live 
+
+https://bebodywisediversityclone.netlify.app/index.html
+
+
 ## Reference Images
 
 ![Alt text](images/homepagescreenshot.png?raw=true "Optional Title")
@@ -36,8 +42,6 @@ We deployed the front-end on Netlify and the backend on Heroku.
 ![Screenshot (257)](https://user-images.githubusercontent.com/97461783/165550301-0c13e4fa-b701-4688-88b3-33a9100f27bc.png)
 
 
-## Live 
 
-https://bebodywisediversityclone.netlify.app/index.html
 
 Happy Coding ..!!
